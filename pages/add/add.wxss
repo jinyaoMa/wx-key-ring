@@ -1,0 +1,24 @@
+/* pages/add/add.wxss */
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section {
+  width: 100%;
+}
+
+button {
+  margin: 30rpx 0;
+}
+
+.btnConfirm {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.btn-area {
+  margin: 20px 16px 16px;
+}

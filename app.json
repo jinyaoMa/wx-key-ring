@@ -1,0 +1,37 @@
+{
+  "entryPagePath": "pages/auth/auth",
+  "pages": [
+    "pages/auth/auth",
+    "pages/index/index",
+    "pages/about/about",
+    "pages/add/add",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "钥匙库",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index.selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about.selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff00",
+    "navigationBarTitleText": "耀匙扣",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

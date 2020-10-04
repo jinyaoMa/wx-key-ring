@@ -1,0 +1,43 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <view class="section">
+    <view class="weui-cells__title">{{labelAria}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="text" placeholder="{{placeholderAria}}" bindinput="bindAriaBlur" value="{{aria}}" />
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="weui-cells__title">{{labelUsername}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="text" placeholder="{{placeholderUsername}}" bindinput="bindUsernameBlur" value="{{username}}" />
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="weui-cells__title">{{labelPassword}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="text" placeholder="{{placeholderPassword}}"
+          bindinput="bindPasswordBlur" value="{{password}}" />
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="weui-cells__title">{{labelMore}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell__bd">
+        <textarea class="weui-textarea" auto-height maxlength="-1" placeholder="{{placeholderMore}}"
+          bindinput="bindMoreBlur" value="{{more}}"></textarea>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="weui-btn-area btn-area">
+      <button class="btnConfirm" bindtap="bindBtnConfirmTap">{{btnConfirm}}</button>
+      <button class="btnCancel" bindtap="bindBtnCancelTap">{{btnCancel}}</button>
+    </view>
+  </view>
+</view>

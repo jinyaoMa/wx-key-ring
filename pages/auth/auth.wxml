@@ -1,0 +1,4 @@
+<!--pages/auth/auth.wxml-->
+<navigator wx:if="{{hasExit}}" class="{{hasExit ? 'nav active' : 'nav'}}" open-type="exit" target="miniProgram">
+  <text class="text">{{textClose}}</text>
+</navigator>

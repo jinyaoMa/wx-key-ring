@@ -1,0 +1,21 @@
+/* pages/auth/auth.wxss */
+.nav {
+  width: fit-content;
+  margin: calc(50vh - 1.5rem) auto;
+  text-align: center;
+  white-space: nowrap;
+  display: none;
+}
+
+.nav.active {
+  display: block;
+}
+
+.text {
+  display: inline-block;
+  padding: 1rem;
+  line-height: 1;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #ffffff;
+}

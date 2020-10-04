@@ -1,0 +1,113 @@
+/**index.wxss**/
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.extend, .cards {
+  width: 100%;
+}
+
+.extend {
+  margin-top: 0.5rem;
+}
+
+.btnImport, .btnExport {
+  width: calc(100% - 2rem) !important;
+  box-sizing: border-box;
+}
+
+.btnImport {
+  margin-bottom: 1rem;
+}
+
+.hintAdd {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 25vh;
+  color: #cccccc;
+}
+
+.card {
+  margin: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.25rem #dddddd;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 2px #dddddd;
+}
+
+.card:before {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 6rem;
+  background-color: #cccccc;
+  position: absolute;
+  top: 0;
+  right: -5rem;
+  transform-origin: top left;
+  transform: rotate(-45deg);
+  box-shadow: inset 0 0 0.35rem #666666;
+}
+
+.card-id {
+  font-size: 0.8rem;
+  color: #cccccc;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.card-aria {
+  font-size: 1.5rem;
+}
+
+.card-username {
+  color: #999999;
+  line-height: 1;
+  margin-top: 0.25rem;
+}
+
+.card-username:before {
+  content: attr(data-label);
+  display: block;
+  font-size: 0.8rem;
+  color: #cccccc;
+  margin: 0.75rem 0;
+}
+
+.addKey {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px #dddddd, 0 0 2px #cccccc;
+}
+
+.addKey:active {
+  box-shadow: inset 0 0 4px #dddddd, inset 0 0 1px #cccccc;
+}
+
+.addKey-img {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  margin: 34rpx 0;
+}

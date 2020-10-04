@@ -1,0 +1,13 @@
+<!--about.wxml-->
+<view class="about">
+  <image class="appIcon" src="{{appIcon}}"></image>
+  <text class="appName">{{appName}}</text>
+  <text class="appAuthor">{{appAuthor}}</text>
+  <text class="appDesc">{{appDesc}}</text>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"
+    bindgetuserinfo="getUserInfo">{{btnGetUserInfo}}</button>
+  <block wx:else>
+    <text class="appPrint">{{appPrint}}</text>
+  </block>
+  <text class="appVer">{{appVer}}</text>
+</view>
